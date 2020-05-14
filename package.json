@@ -1,0 +1,22 @@
+{
+  "name": "project0",
+  "version": "1.0.0",
+  "description": "CS50 Project0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodprogramdev/RBSL-CS50-Project0.git"
+  },
+  "author": "Rodrigo Bonzerr S. Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodprogramdev/RBSL-CS50-Project0/issues"
+  },
+  "homepage": "https://github.com/rodprogramdev/RBSL-CS50-Project0#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
