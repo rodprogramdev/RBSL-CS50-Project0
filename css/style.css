@@ -1,18 +1,38 @@
 @charset "UTF-8";
+/*global variables*/
+/*Breakpoints
+Phone 
+Tablet Portrait
+Tablet Landscape
+Desktop
+
+
+600px
+800px
+1000px
+1200px
+1800px
+*/
+/*Universal Reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  background-color: #fff; }
+  background-color: #fff;
+  font-family: 'Chelsea Market', cursive; }
 
+/*Header*/
 .header {
   height: 100vh;
   background-image: url(../image/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);
   /* Photo by Ramón Salinero on Unsplash */
   background-size: cover;
   background-position: left; }
+  @media (max-width: 600px) {
+    .header {
+      background-position: center; } }
 
 .heading-primary {
   text-align: center;
@@ -22,19 +42,46 @@ body {
   padding-top: 30px;
   display: block;
   font-size: 30px; }
+  @media (max-width: 600px) {
+    .heading-primary--main {
+      font-size: 20px; } }
 
 .heading-primary--sub {
   display: block;
   font-size: 20px; }
-
-.bg-dark {
-  background-color: transparent; }
+  @media (max-width: 600px) {
+    .heading-primary--sub {
+      font-size: 10px; } }
 
 .header__list {
   padding: 10px;
   list-style-type: none;
   color: #fff;
   float: left; }
+
+@media (max-width: 600px) {
+  .navbar-brand {
+    margin-top: 10px;
+    font-size: 16px; } }
+
+.navbar {
+  padding: 5.5px; }
+
+.header__secondary {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 10%; }
+
+.heading-secondary {
+  width: 50%;
+  display: block;
+  font-size: 16px;
+  color: white; }
+  @media (max-width: 600px) {
+    .heading-secondary {
+      width: 90%;
+      font-size: 12px; } }
 
 /*
 .nav{
@@ -81,3 +128,26 @@ table {
 th, td {
   padding: 5px;
   text-align: center; }
+
+.row-box {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.445);
+  border-radius: 4px;
+  padding: 0;
+  width: 53%;
+  padding: 0 0 10px 0; }
+
+.row-image--1 {
+  color: #fff;
+  margin: 0;
+  border-radius: 2px;
+  width: 100%; }
+
+.row-image--2 {
+  color: #fff;
+  margin: 0;
+  border-radius: 2px;
+  width: 100%; }
+
+.grid-span {
+  color: #a2ec8b; }

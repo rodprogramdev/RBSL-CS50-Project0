@@ -1,5 +1,28 @@
+
+/*global variables*/
+
 $color-primary: #fff;
 $color-gray-dark: #777;
+$color-dark: #000;
+$color-blue: rgb(15, 18, 168);
+
+$color-primary-opacity:rgba(255, 255, 255, 0.445);
+
+/*Breakpoints
+Phone 
+Tablet Portrait
+Tablet Landscape
+Desktop
+
+
+600px
+800px
+1000px
+1200px
+1800px
+*/
+
+/*Universal Reset*/
 
 * {
     margin:0;
@@ -7,15 +30,23 @@ $color-gray-dark: #777;
     box-sizing: border-box;
 }
 
+
 body{
     background-color: $color-primary;
+    font-family: 'Chelsea Market', cursive;
 }
 
+
+
+/*Header*/
 .header{
     height: 100vh;
     background-image: url(../image/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);/* Photo by Ramón Salinero on Unsplash */ 
     background-size:cover;    
     background-position: left;
+    @media (max-width: 600px){
+        background-position: center;
+     }
 }
 
 .heading-primary{
@@ -27,21 +58,72 @@ body{
     padding-top: 30px;
     display: block;
     font-size: 30px;
+
+    @media (max-width: 600px){
+       font-size: 20px;
+    }
+
+
 }
 
 .heading-primary--sub{
     display: block;
     font-size:20px;
+
+    @media (max-width: 600px){
+        font-size: 10px;
+     }
+ 
 }
 
-.bg-dark{
-    background-color: transparent;
-}
+
 .header__list{
     padding: 10px;
     list-style-type: none;
     color:$color-primary;
     float:left;
+
+    
+
+    
+}
+
+
+
+.navbar-brand{
+    @media (max-width: 600px){
+        margin-top:10px;
+        font-size: 16px;
+       
+    }
+
+}
+
+.navbar{
+    padding: 5.5px;
+}
+ 
+
+
+.header__secondary{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left:10%;
+}
+
+
+
+.heading-secondary{
+    width: 50%;
+    display: block;
+    font-size: 16px;
+    color:white;
+
+    @media (max-width: 600px){
+        width: 90%;
+        font-size: 12px;
+     }
 }
 
 /*
@@ -97,3 +179,34 @@ th, td {
     text-align: center;    
   }
 
+
+
+  //BLOG
+  .row-box{
+    color:$color-dark;
+    background-color:$color-primary-opacity;
+    border-radius: 4px;
+    padding:0;
+    width: 53%;
+    padding:0 0 10px 0;
+      
+  }
+
+  .row-image--1{
+    color:$color-primary;
+    margin: 0;
+    border-radius: 2px;
+   
+    width: 100%;
+  }
+
+  .row-image--2{
+    color:$color-primary;
+    margin: 0;
+    border-radius: 2px;
+    
+    width: 100%;
+  }
+.grid-span{
+    color: rgb(162, 236, 139);
+}
