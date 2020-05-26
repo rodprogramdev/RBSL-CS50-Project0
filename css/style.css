@@ -25,6 +25,7 @@ body {
 
 /*Header*/
 .header {
+  position: relative;
   height: 100vh;
   background-image: url(../image/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);
   /* Photo by Ramón Salinero on Unsplash */
@@ -36,7 +37,7 @@ body {
 
 .heading-primary {
   text-align: center;
-  color: white; }
+  color: #fff; }
 
 .heading-primary--main {
   padding-top: 30px;
@@ -77,7 +78,7 @@ body {
   width: 50%;
   display: block;
   font-size: 16px;
-  color: white; }
+  color: #fff; }
   @media (max-width: 600px) {
     .heading-secondary {
       width: 90%;
@@ -129,13 +130,42 @@ th, td {
   padding: 5px;
   text-align: center; }
 
+.heading-tertiary {
+  text-align: center;
+  color: #fff; }
+  @media (max-width: 600px) {
+    .heading-tertiary {
+      width: 90%;
+      font-size: 12px; } }
+
+.header__secondary--blog {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 10%; }
+
+.row {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%); }
+  @media (max-width: 600px) {
+    .row {
+      width: 90%;
+      font-size: 12px; } }
+
 .row-box {
   color: #000;
-  background-color: rgba(255, 255, 255, 0.445);
+  background-color: rgba(15, 18, 168, 0.692);
   border-radius: 4px;
   padding: 0;
-  width: 53%;
+  width: 40%;
   padding: 0 0 10px 0; }
+  @media (max-width: 600px) {
+    .row-box {
+      width: 50%;
+      font-size: 10px;
+      margin: 10px; } }
 
 .row-image--1 {
   color: #fff;
@@ -150,4 +180,23 @@ th, td {
   width: 100%; }
 
 .grid-span {
-  color: #a2ec8b; }
+  /*color: rgb(139, 205, 236);*/ }
+
+.link-blog:link,
+.link-blog:visited {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all .2s; }
+  @media (max-width: 600px) {
+    .link-blog:link,
+    .link-blog:visited {
+      width: 50%;
+      font-size: 10px; } }
+
+.link-blog:hover,
+.link-blog:active {
+  color: #fff;
+  box-shadow: 0.1rem 0.1rem 1rem green;
+  transform: scale(1.3); }

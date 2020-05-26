@@ -4,7 +4,7 @@
 $color-primary: #fff;
 $color-gray-dark: #777;
 $color-dark: #000;
-$color-blue: rgb(15, 18, 168);
+$color-blue: rgba(15, 18, 168, 0.692);
 
 $color-primary-opacity:rgba(255, 255, 255, 0.445);
 
@@ -40,6 +40,7 @@ body{
 
 /*Header*/
 .header{
+    position:relative;
     height: 100vh;
     background-image: url(../image/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);/* Photo by Ramón Salinero on Unsplash */ 
     background-size:cover;    
@@ -51,7 +52,7 @@ body{
 
 .heading-primary{
     text-align: center;
-    color: white;
+    color: $color-primary;
 }
 
 .heading-primary--main{
@@ -118,7 +119,7 @@ body{
     width: 50%;
     display: block;
     font-size: 16px;
-    color:white;
+    color:$color-primary;
 
     @media (max-width: 600px){
         width: 90%;
@@ -182,13 +183,51 @@ th, td {
 
 
   //BLOG
+  .heading-tertiary{
+    text-align:center;
+    color:$color-primary;
+    
+    @media (max-width: 600px){
+        width: 90%;
+        font-size: 12px;
+     }
+     
+  }
+
+  .header__secondary--blog{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left:10%;
+  }
+
+  .row{
+      position: absolute;
+      top:50%;
+      left:30%;
+      transform: translate(-50%,-50%);
+     
+      @media (max-width: 600px){
+        width: 90%;
+        font-size: 12px;
+     }
+     
+      
+  }
+
   .row-box{
     color:$color-dark;
-    background-color:$color-primary-opacity;
+    background-color:$color-blue;
     border-radius: 4px;
     padding:0;
-    width: 53%;
+    width: 40%;
     padding:0 0 10px 0;
+    
+    @media (max-width: 600px){
+        width: 50%;
+        font-size: 10px;
+        margin: 10px;
+     }
       
   }
 
@@ -208,5 +247,28 @@ th, td {
     width: 100%;
   }
 .grid-span{
-    color: rgb(162, 236, 139);
+    /*color: rgb(139, 205, 236);*/
 }
+
+.link-blog:link,
+.link-blog:visited{
+    color:$color-primary;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .2s;
+    @media (max-width: 600px){
+        width: 50%;
+        font-size: 10px;
+     }
+}
+
+
+.link-blog:hover,
+.link-blog:active{
+    color:$color-primary;
+       
+    box-shadow: 0.1rem 0.1rem 1rem green;
+    transform: scale(1.3);
+}
+
