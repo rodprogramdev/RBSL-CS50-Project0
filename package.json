@@ -18,5 +18,6 @@
   "homepage": "https://github.com/rodprogramdev/RBSL-CS50-Project0#readme",
   "devDependencies": {
     "node-sass": "^4.14.1"
+     "tar": ">=3.2.3"
   }
 }
